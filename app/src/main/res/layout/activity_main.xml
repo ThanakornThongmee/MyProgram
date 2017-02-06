@@ -8,10 +8,62 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.guilcorp.guillinkinpark.myprogram.MainActivity">
+    tools:context="com.guilcorp.guillinkinpark.myprogram.MainActivity"
+    android:background="@drawable/wallpapers_a_02">>
 
-    <TextView
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign Up"
+            android:id="@+id/button"
+            android:layout_weight="1"
+            android:onClick="clickSignUpMain" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign In"
+            android:id="@+id/button2"
+            android:layout_weight="1"
+            android:onClick="clickSignIn" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        android:layout_centerHorizontal="true"
+        android:padding="30dp"
+        android:gravity="center_horizontal"
+        android:background="#82ffffff">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imageView6" />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText4"
+            android:hint="User :"
+            android:inputType="text"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary" />
+
+        <EditText
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/editText5"
+            android:hint="Password :"
+            android:inputType="textPassword"
+            android:textColor="@color/colorPrimary"
+            android:textColorHint="@color/colorPrimary" />
+    </LinearLayout>
 </RelativeLayout>
